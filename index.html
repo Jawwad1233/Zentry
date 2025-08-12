@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <!-- Bootstrap CSS -->
+
+  <!-- Bootstrap + Fonts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <!-- External CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Your shared CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="zentry.html">Zentry</a>
-          </li>
-        </ul>
-      </div>
+<body class="zentry-bg">
+  <div class="container zentry-frame mt-3 mb-4 p-4">
+
+    <!-- Navbar (same across pages) -->
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-link display-5 m-0 text-decoration-none">My Portfolio</a>
+      <nav class="d-flex gap-4">
+        <a class="nav-soft" href="index.html">Home</a>
+        <a class="nav-soft" href="wireframe.html">Wireframe</a>
+        <a class="nav-soft" href="zentry.html">Zentry</a>
+      </nav>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="text-center mt-5">
-    <img src="MPhoto.JPG" alt="Your Photo" class="profile-img" />
-    <h1>Jawwad kamal</h1>
-    <p>My name is Jawwad and I have been interested in technology since I was a little kid. From breaking phones to see what was inside and testing if I tablet was waterproof (it wasn't) to now where I build and fix computers for friends and family and code websites. I have come a long way in my career and I am always open to learn more and become even better. </p>
-  </section>
+    <!-- Hero -->
+    <header class="text-center mt-4">
+      <h1 class="display-4 fw-bold">Jawwad Kamal</h1>
+      <p class="lead small-intro">My name is Jawwad and I have been interested in technology since I was a little kid. From breaking phones to see what was inside and testing if I tablet was waterproof (it wasn't) to now where I build and fix computers for friends and family and code websites. I have come a long way in my career and I am always open to learn more and become even better.</p>
+      <img src="MPhoto.JPG" alt="Your Photo" class="profile-img mt-2" />
+    </header>
 
-  <!-- Skills Section -->
-  <section class="container mt-5">
-    <h2>Skills</h2>
-    <div class="row text-center">
-      <div class="col">
-        <img src="HTMLLOGO.png" alt="HTML" class="icon" />
-        <p>HTML</p>
+    <!-- Skills -->
+    <section class="mt-5">
+      <h2 class="fw-bold section-heading">Skills</h2>
+      <div class="row text-center mt-3">
+        <div class="col">
+          <img src="HTMLLOGO.png" alt="HTML" class="icon" />
+          <p class="mt-2">HTML</p>
+        </div>
+        <div class="col">
+          <img src="cssimg.png" alt="CSS" class="icon" />
+          <p class="mt-2">CSS</p>
+        </div>
+        <div class="col">
+          <img src="javascript.png" alt="JavaScript" class="icon" />
+          <p class="mt-2">JavaScript</p>
+        </div>
       </div>
-      <div class="col">
-        <img src="cssimg.png" alt="CSS" class="icon" />
-        <p>CSS</p>
-      </div>
-      <div class="col">
-        <img src="javascript.png" alt="JavaScript" class="icon" />
-        <p>JavaScript</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Interests and Goals -->
-  <section class="container mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Interests</h3>
-        <p>Computers, phones, cars, and Formula 1</p>
+    <!-- Interests & Goals -->
+    <section class="mt-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3 class="fw-bold">Interests</h3>
+          <p>Computers, phones, cars, and Formula 1</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="fw-bold">Goals</h3>
+          <p>Become proficient in coding, get a good score on the SAT's, and maintain good grades to hopefully get into the university of my dreams.</p>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h3>Goals</h3>
-        <p>Become proficent in coding, get a good score on the SAT's, and maintain good grades to hopefully get into the university of my dreams. </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  
+    <!-- Small DOM interaction -->
+    <section class="mt-4 text-center">
+      <button class="btn btn-primary" onclick="toggleAbout()">Toggle Bio</button>
+      <p id="about" style="display:none;" class="mt-2">🎉 Keep pushing—you're doing great!</p>
+    </section>
 
-  <!-- Bootstrap JS + Custom JS -->
+   
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>

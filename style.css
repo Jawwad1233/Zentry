@@ -57,3 +57,16 @@
 
   .build-card { width: 280px; }
   .build-card .caption { font-size: 0.95rem; color: #3a3558; }
+
+
+.color-box{
+  width:100%;
+  height:40px;
+  margin-bottom:10px;
+  border-radius:6px;
+  padding:6px 10px;
+  color:#2b2350;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+}

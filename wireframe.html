@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Wireframe & Assets</title>
+
+  <!-- Bootstrap + Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Your shared CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="zentry-bg">
+  <div class="container zentry-frame mt-3 mb-4 p-4">
+
+    <!-- Navbar (same as other pages) -->
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-link display-5 m-0 text-decoration-none">My Portfolio</a>
+      <nav class="d-flex gap-4">
+        <a class="nav-soft" href="index.html">Home</a>
+        <a class="nav-soft" href="wireframe.html">Wireframe</a>
+        <a class="nav-soft" href="zentry.html">Zentry</a>
+      </nav>
+    </div>
+
+    <header class="text-center mt-4">
+      <h1 class="display-5 fw-bold">Portfolio Wireframe & Design Assets</h1>
+      <p class="lead small-intro">This page shows the rough structure (wireframe) I used to build my homepage, plus the colors and fonts for my portfolio theme.</p>
+    </header>
+
+    <!-- Row 1: Wireframe image -->
+    <section class="text-center mt-4">
+      <h3 class="fw-bold">Homepage Wireframe</h3>
+      <!-- Replace wireframe-portfolio.png with your exported Figma image -->
+      <img src="wireframe.png" alt="Portfolio Wireframe" class="img-fluid mt-3" />
+      <p class="text-muted mt-2">Exported from Figma.</p>
+    </section>
+
+    <!-- Row 2: Design assets -->
+    <section class="mt-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h4 class="fw-bold">Color Palette</h4>
+          <!-- Update hexes if you use others -->
+          <div class="color-box" style="background:#e4dcff;">#e4dcff</div>
+          <div class="color-box" style="background:#efeaff;">#efeaff</div>
+          <div class="color-box" style="background:#c5b8f2;">#c5b8f2</div>
+          <div class="color-box" style="background:#2b2350;color:#fff;">#2b2350</div>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-bold">Fonts</h4>
+          <p style="font-family:'Playfair Display',serif;font-size:22px;margin:0;">Playfair Display</p>
+          <small class="text-muted">Used for headings and body text.</small>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
