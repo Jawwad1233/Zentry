@@ -1,29 +1,59 @@
-html {
-  height: 100%;
-  width: 100%;
-}
-body {
-  background-color: #e6e2ff;
-  color: #2f2545;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
-.navbar {
-  background-color: #d6ccf1;
-}
-.navbar-brand,
-.nav-link {
-  color: #2f2545 !important;
-  font-weight: bold;
-}
-.section-title {
-  font-size: 1.5rem;
-  margin-top: 30px;
-  text-decoration: underline;
-  font-weight: bold;
-}
-.footer {
-  padding-top: 20px;
-  border-top: 1px solid #bbb;
-  color: #666;
-} 
+  /* ----- Global images ----- */
+  .profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .icon {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ----- Zentry page look ----- */
+  .zentry-bg { 
+    background-color: #e4dcff;
+  }
+
+  .zentry-frame { 
+    background: #efeaff; 
+    border: 6px solid #c5b8f2; 
+    border-radius: 8px; 
+  }
+
+  .brand-link { 
+    color: #2b2350; 
+    font-family: 'Playfair Display', serif; 
+  }
+
+  .nav-soft { 
+    color: #2b2350; 
+    text-decoration: none; 
+    font-weight: 600; 
+  }
+  .nav-soft:hover { 
+    text-decoration: underline; 
+  }
+
+  .section-heading { 
+    font-family: 'Playfair Display', serif; 
+    text-decoration: underline; 
+    margin-top: .75rem; 
+  }
+
+  .small-intro { 
+    max-width: 820px; 
+    margin: 0 auto; 
+    color: #3a3558; 
+  }
+
+  .small-text { 
+    font-size: 0.95rem; 
+    color: #4c4769; 
+    max-width: 520px; 
+  }
+
+  .build-card { width: 280px; }
+  .build-card .caption { font-size: 0.95rem; color: #3a3558; }
